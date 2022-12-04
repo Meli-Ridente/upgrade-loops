@@ -6,3 +6,27 @@ for (let i=0; i<products.length; i++){
   console.log(products[i].includes('Camiseta'));
 }
 
+/* Comprueba en cada uno de los usuarios que tenga al menos dos
+ trimestres aprobados y añade la propiedad isApproved a true o false en consecuencia. Una vez lo tengas compruébalo con un console.log. */
+
+ 
+const alumns = [
+  {name: 'Ana Gomes', T1: false, T2: true, T3: true}, 
+  {name: 'Melissa Ridente', T1: true, T2: true, T3: true},
+  {name: 'Jose Castillo', T1: false, T2: false, T3: true},
+  {name: 'Luis Lopez', T1: true, T2: false, T3: false},
+  {name: 'Raquel Benito', T1: true, T2: true, T3: false}
+]
+
+
+var isApproved = false;
+for (var i=0; i<alumns.length; i++){
+  if (alumns[i].T1 == true && alumns[i].T2 == true && alumns[i].T3 == true){
+    isApproved == true;
+    console.log("Está aprobado.")
+  }else
+  console.log("No está aprobado.")
+} 
+
+
+
