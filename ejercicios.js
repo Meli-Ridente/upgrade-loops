@@ -32,8 +32,22 @@ for (var i=0; i<alumns.length; i++){
 
 /* Usa un bucle forof para recorrer todos los destinos del array. Imprime en un ***console.log*** sus valores. Puedes usar este array: */
 
-const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar'];
+const placesToTravell = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar'];
 
-for (let value of placesToTravel){
+for (let value of placesToTravell){
   console.log(value)
 }
+
+/*Usa un for...in para imprimir por consola los datos del alienígena.. Puedes usar este objeto:*/
+
+const alien = {
+  name: 'Wormuck',
+  race: 'Cucusumusu',
+  planet: 'Eden',
+  weight: '259kg'
+}
+
+for (let value in alien){
+  console.log(alien[value])
+}
+
