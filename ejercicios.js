@@ -87,19 +87,29 @@ console.log(placesToTravel)
  console.log('EJERCICIO 6: ')
 
  const toys = [
+  {id: 40, name: 'El gato con Guantes'},
   {id: 5, name: 'Buzz MyYear'}, 
   {id: 11, name: 'Action Woman'}, 
-  {id: 23, name: 'Barbie Man'}, 
   {id: 40, name: 'El gato con Guantes'},
+  {id: 40, name: 'El gato con Guantes'},
+  {id: 40, name: 'El gato con Guantes'},
+  {id: 40, name: 'El gato con Guantes'},
+  {id: 23, name: 'Barbie Man'}, 
   {id: 40, name: 'El gato felix'}
   ]
 
-  for (let value of toys){
-    if(value.name.includes('gato')){
-      toys.splice(3, 2)
+  for(var i=toys.length-1; i>=0; i--){
+    if(toys[i].name.includes('gato')){
+      toys.splice(i, 1)
     }
   }
+
   console.log(toys)
+  /*for (let value of toys){
+    if(value.name.includes('gato')){
+      toys.splice(value, 1)
+    }
+  }*/
 
   console.log('EJERCICIO 7: ')
   /*Usa un bucle for...of para recorrer todos los juguetes 
